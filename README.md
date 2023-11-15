@@ -4,7 +4,7 @@
 
 # Links
   - Link đề bài: https://apicrm.cybersoft.edu.vn/files/02-03-2023-02-16-09-api-movie.pdf
-  - Source of APIs: https://movienew.cybersoft.edu.vn/swagger/index.html
+  - Link các APIs: https://movienew.cybersoft.edu.vn/swagger/index.html
   - Link Github dự án: https://github.com/kingaz123/CapstoneReact
 
 # Các trang bao gồm
