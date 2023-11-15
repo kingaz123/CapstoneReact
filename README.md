@@ -15,7 +15,7 @@
 
 # Các thư mục cần tạo
   - assets
-  - Components
+  - components
   - pages
   - route
   - redux
@@ -23,7 +23,7 @@
   - utils
   - templates
 
-# Các thư viện cần cài đặt
+# Các thư viện sử dụng:
   - react-router-dom
   - axios
   - redux -> @reduxjs/toolkit react-redux
