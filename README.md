@@ -1,8 +1,8 @@
-# Team members
+# Thành viên nhóm
   - Trần Phan Nhật Quang (nhóm trưởng)
   - Trần Đức Thuận
 
-# Links
+# Các đường dẫn:
   - Link đề bài: https://apicrm.cybersoft.edu.vn/files/02-03-2023-02-16-09-api-movie.pdf
   - Link các APIs: https://movienew.cybersoft.edu.vn/swagger/index.html
   - Link Github dự án: https://github.com/kingaz123/CapstoneReact

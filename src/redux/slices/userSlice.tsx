@@ -32,19 +32,6 @@ export const userSlice = createSlice({
       state.currentUser = action.payload;
     },
   },
-  extraReducers: (builder) => {
-    builder.addCase(getAllUsers.fulfilled, (state, action) => {
-      state.users = action.payload;
-    });
-    builder.addCase(getAllUsers.rejected, (state, action) => {
-      state.users = [
-        {
-          hoTen: "Quang",
-          maLoaiNguoiDung: "",
-        },
-      ];
-    });
-  },
 });
 
 export const { setUserData, setCurrentUser } = userSlice.actions;
