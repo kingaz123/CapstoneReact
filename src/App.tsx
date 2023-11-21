@@ -1,6 +1,4 @@
-import "./App.css";
 import { GlobalStyle } from "./components/global-style/global-style";
-
 import { RouterProvider } from "react-router-dom";
 import { router } from "./route";
 

@@ -1,7 +1,16 @@
 import React from "react";
+import { Carousel } from "../../components/Carousel";
+import { MovieList } from "../../components/MovieList";
+import { TheaterMenu } from "../../components/TheaterMenu";
 
-function Home() {
-  return <div>home</div>;
-}
+const Home: React.FC = () => {
+  return (
+    <div>
+      <Carousel />
+      <MovieList />
+      <TheaterMenu />
+    </div>
+  );
+};
 
 export default Home;

@@ -1,5 +1,5 @@
 # Team members
-  - Trần Phan Nhật Quang
+  - Trần Phan Nhật Quang (nhóm trưởng)
   - Trần Đức Thuận
 
 # Links
@@ -9,6 +9,7 @@
 
 # Các trang bao gồm
   - Trang chủ
+  - Thông tin phim
   - Đặt vé
   - Đăng nhập
   - Đăng ký

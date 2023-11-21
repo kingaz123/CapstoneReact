@@ -1,39 +1,74 @@
-import Home from "../pages/Home/Home";
-import Carts from "../pages/Booking/Booking";
-import Login from "../pages/Login/Login";
-import Register from "../pages/Register/Register";
-
+import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
-import HomeTemplates from "../templates/home/home.templates";
+
+// Lazy Load Components
+const Home = lazy(() => import("../pages/Home/Home"));
+const Page404 = lazy(() => import("../pages/Page404/Page404"));
+const Login = lazy(() => import("../pages/Login/Login"));
+const BookingTicket = lazy(() => import("../pages/Booking/MainBookingTicket"));
+const Register = lazy(() => import("../pages/Register/Register"));
+const MovieInfo = lazy(() => import("../components/MovieInfo/MovieInfo"));
+
+// Template Components
 import UserTemplate from "../templates/user/user.templates";
 
 export const router = createBrowserRouter([
   {
-    path: "home",
-    element: <HomeTemplates />,
+    path: "", // -> /
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <UserTemplate />
+      </Suspense>
+    ),
     children: [
       {
-        path: "",
-        element: <Home />,
+        path: "", // -> /
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <Home />
+          </Suspense>
+        ),
       },
       {
-        path: "booking",
-        element: <Carts />,
+        path: "login", // -> /login
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <Login />
+          </Suspense>
+        ),
+      },
+      {
+        path: "register", // -> /register
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <Register />
+          </Suspense>
+        ),
+      },
+      {
+        path: "booking", // -> /booking
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <BookingTicket />
+          </Suspense>
+        ),
+      },
+      {
+        path: "detail/:id", // -> /detail/:id
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <MovieInfo />
+          </Suspense>
+        ),
       },
     ],
   },
   {
-    path: "user",
-    element: <UserTemplate />,
-    children: [
-      {
-        path: "login",
-        element: <Login />,
-      },
-      {
-        path: "register",
-        element: <Register />,
-      },
-    ],
+    path: "*", // -> /not-found
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <Page404 />
+      </Suspense>
+    ),
   },
 ]);
