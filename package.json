@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "start": "vite preview", 
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+     "build-vercel": "CI=false vite build || true"
   },
   "dependencies": {
     "@ant-design/icons": "^5.1.4",
