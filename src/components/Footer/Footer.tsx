@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
         </div>
         <hr className="my-8 border-gray-300" />
         <span className="block text-base sm:text-center">
-          Bản quyền © 2023 Cybersoft Cinema. Đã đăng ký bản quyền.
+          Bản quyền © 2023 Sunlight Cinema. Đã đăng ký bản quyền.
         </span>
       </div>
     </footer>
