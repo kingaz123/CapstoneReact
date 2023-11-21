@@ -6,7 +6,7 @@ import {
   set_loading_ended,
   set_loading_started,
 } from "../../redux/slices/loadingSlice";
-import { movieServ } from "../../services/movie.service"; // updated import
+import { movieServ } from "../../services/movie.service";
 
 type Movie = {
   maPhim: number;
@@ -14,7 +14,6 @@ type Movie = {
   hinhAnh: string;
   moTa: string;
   maNhom: string;
-  // ... other properties if needed
 };
 
 const MovieList: React.FC = () => {
@@ -24,9 +23,9 @@ const MovieList: React.FC = () => {
   useEffect(() => {
     dispatch(set_loading_started());
     movieServ
-      .getAllMovies() // updated call
+      .getAllMovies()
       .then((res) => {
-        setMovies(res.data.content); // directly set movies as the response is already the array of movies
+        setMovies(res.data.content);
         dispatch(set_loading_ended());
       })
       .catch((err) => {
@@ -54,7 +53,6 @@ const MovieList: React.FC = () => {
               />
               <div className="flex flex-col justify-between p-6 h-[calc(100%-16rem)]">
                 {" "}
-                {/* Adjusted height */}
                 <div>
                   <h3
                     className="text-base font-bold mb-2 line-clamp-2"

@@ -23,22 +23,15 @@ class BookingList extends Component<Props> {
         <h3 className="uppercase">Danh sách ghế bạn chọn</h3>
         <div className="my-3">
           <div className="flex items-center mt-5">
-            {" "}
-            {/* 'd-flex' replaced with 'flex' */}
-            <button className="gheDuocChon mr-2"></button>{" "}
-            {/* 'mr-2' for margin right */}
+            <button className="gheDuocChon mr-2"></button>
             <p>Ghế đã đặt</p>
           </div>
           <div className="flex items-center mt-5">
-            {" "}
-            {/* Flex container with center alignment */}
-            <button className="gheDangChon mr-2"></button>{" "}
-            {/* 'mr-2' for margin right */}
+            <button className="gheDangChon mr-2"></button>
             <p>Ghế đang chọn</p>
           </div>
           <div className="flex items-center my-5">
-            <button className="ghe mr-2"></button>{" "}
-            {/* 'mr-2' for margin right */}
+            <button className="ghe mr-2"></button>
             <p>Ghế chưa đặt</p>
           </div>
         </div>
@@ -47,18 +40,12 @@ class BookingList extends Component<Props> {
             <thead className="text-white w-full">
               <tr>
                 <th scope="col" className="border-b border-r border-white py-2">
-                  {" "}
-                  {/* Add vertical borders and padding */}
                   Số ghế
                 </th>
                 <th scope="col" className="border-b border-r border-white py-2">
-                  {" "}
-                  {/* Add vertical borders and padding */}
                   Giá
                 </th>
                 <th scope="col" className="border-b border-white py-2">
-                  {" "}
-                  {/* Last cell doesn't need right border */}
                   Hủy
                 </th>
               </tr>
@@ -67,12 +54,10 @@ class BookingList extends Component<Props> {
               {this.props.seatListChosen.map((Ghe: any, index: number) => {
                 return (
                   <tr key={index}>
-                    <td className="border-r border-white py-2">{Ghe.soGhe}</td>{" "}
-                    {/* Add vertical borders and padding */}
+                    <td className="border-r border-white py-2">{Ghe.soGhe}</td>
                     <td className="border-r border-white py-2">
                       {Ghe.gia.toLocaleString()}
-                    </td>{" "}
-                    {/* Add vertical borders and padding */}
+                    </td>
                     <td className="py-2">
                       <button
                         className="btn"
@@ -89,8 +74,7 @@ class BookingList extends Component<Props> {
               <tr>
                 <td className="border-t border-r border-white py-2">
                   Tổng tiền
-                </td>{" "}
-                {/* Add vertical borders and padding */}
+                </td>
                 <td className="border-t border-r border-white text-yellow-400 py-2">
                   {this.tongTien()}
                 </td>

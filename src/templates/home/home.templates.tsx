@@ -1,12 +1,18 @@
-import React, { PropsWithChildren } from "react";
+import React, { Fragment } from "react";
+import Header from "../../components/Header/Header";
 import { Outlet } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 
-function HomeTemplates(props: PropsWithChildren) {
+const HomeTemplate: React.FC = () => {
   return (
-    <div>
-      <Outlet />
-    </div>
+    <Fragment>
+      <div className="flex flex-col justify-between min-h-screen">
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
+    </Fragment>
   );
-}
+};
 
-export default HomeTemplates;
+export default HomeTemplate;

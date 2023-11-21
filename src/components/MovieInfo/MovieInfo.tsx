@@ -19,7 +19,6 @@ const MovieInfo: React.FC = () => {
 
   useEffect(() => {
     getMovieDetails(id);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const {
@@ -103,12 +102,11 @@ const MovieInfo: React.FC = () => {
         visible={modal2Open}
         onCancel={() => {
           setModal2Open(false);
-          // Resetting the iframe src to stop the video and sound
           const iframe = document.querySelector("iframe");
           const iframeSrc = iframe.src;
           iframe.src = iframeSrc;
         }}
-        footer={null} // Removes default footer buttons
+        footer={null}
         width={"90vw"}
       >
         <iframe

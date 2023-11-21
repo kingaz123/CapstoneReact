@@ -3,10 +3,6 @@ import userSlice from "./slices/userSlice";
 import loadingSlice from "./slices/loadingSlice";
 import { BookingReducer } from "./BookingReducer/reducer";
 import movieSlice from "./slices/movieSlice";
-
-
-// You might have to define the RootState and AppDispatch types if you haven't already
-// This is just an example, adjust according to your actual state shape
 export type RootState = {
   project: string;
   startDay: string;

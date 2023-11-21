@@ -1,6 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-
-// Define the type for the state
 interface LoadingState {
   isLoading: boolean;
 }
@@ -19,10 +17,6 @@ export const loadingSlice = createSlice({
     set_loading_ended: (state) => {
       state.isLoading = false;
     },
-    // If you have payload, use PayloadAction<TypeOfPayload> to type it
-    // exampleAction: (state, action: PayloadAction<string>) => {
-    //   // Do something with action.payload
-    // },
   },
 });
 

@@ -39,8 +39,8 @@ export const userSlice = createSlice({
     builder.addCase(getAllUsers.rejected, (state, action) => {
       state.users = [
         {
-          hoTen: "bao",
-          maLoaiNguoiDung: "QuanTri",
+          hoTen: "Quang",
+          maLoaiNguoiDung: "",
         },
       ];
     });
