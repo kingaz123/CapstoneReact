@@ -43,11 +43,6 @@ function TheaterMenuItem({ maHeThongRap }: TheaterMenuItemProps) {
               {item.tenCumRap}
             </p>
             <p className="text-sm text-gray-600 line-clamp-2">{item.diaChi}</p>
-            <NavLink to="/theater-details">
-              <button className="mt-2 text-sm font-medium text-blue-500 duration-300 hover:text-blue-700">
-                [Chi tiết]
-              </button>
-            </NavLink>
           </div>
         ),
         key: index,
