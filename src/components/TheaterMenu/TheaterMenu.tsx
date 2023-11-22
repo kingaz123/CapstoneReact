@@ -36,7 +36,7 @@ const TheaterMenu: React.FC = () => {
   return (
     <div className="max-w-screen-xl mx-auto mb-16">
       <h2 className="text-3xl font-bold mb-7 text-white text-center">
-        HỆ THỐNG RẠP PHIM
+        ĐẶT VÉ THEO LỊCH CHIẾU VÀ RẠP ƯA THÍCH CỦA BẠN
       </h2>
       <div className="">
         <Tabs tabPosition={"left"} items={renderItemTab()} />

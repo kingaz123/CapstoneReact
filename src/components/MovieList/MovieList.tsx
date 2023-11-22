@@ -36,10 +36,10 @@ const MovieList: React.FC = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto mb-16 py-10 px-4 sm:px-6 lg:px-8">
-      <h2 className="text-4xl font-extrabold tracking-tight text-white mb-8">
-        Danh sách phim
+      <h2 className="text-4xl font-extrabold tracking-tight text-white mb-8 text-center">
+        PHIM MỚI
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-10">
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-10">
         {movies.map((item) => {
           return (
             <div
@@ -72,9 +72,9 @@ const MovieList: React.FC = () => {
                 </div>
                 <NavLink
                   to={`/detail/${item.maPhim}`}
-                  className="text-indigo-600 hover:text-indigo-900 font-medium text-base"
+                  className="text-indigo-600 hover:text-indigo-900 font-medium text-base text-right"
                 >
-                  Xem Ngay
+                  Chi tiết
                 </NavLink>
               </div>
             </div>
