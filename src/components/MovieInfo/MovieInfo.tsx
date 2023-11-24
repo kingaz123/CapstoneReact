@@ -93,9 +93,6 @@ const MovieInfo: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="py-24">
-        <TheaterMenu />
-      </div>
       <Modal
         title="Trailer từ Youtube"
         centered
