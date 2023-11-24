@@ -112,7 +112,7 @@ const MovieInfo: React.FC = () => {
         <iframe
           width="100%"
           height="500"
-          src="https://www.youtube.com/embed/1ovgxN2VWNc?autoplay=1"
+          src="https://www.youtube.com/embed/VvSrHIX5a-0?si=NEn9ksbggezEPLbz"
           title="Trailer"
           frameBorder={0}
           allow="accelerometer; clipboard-write; autoplay; encrypted-media; gyroscope; web-share"
