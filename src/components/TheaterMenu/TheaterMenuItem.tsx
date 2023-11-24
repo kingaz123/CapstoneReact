@@ -105,7 +105,7 @@ function TheaterMenuItem({ maHeThongRap }: TheaterMenuItemProps) {
   };
   return (
     <Tabs
-      tabPosition={"left"}
+      tabPosition={"top"}
       items={renderTheaterMenuItem()}
       style={{ maxHeight: "500px", overflowY: "scroll" }}
     />
