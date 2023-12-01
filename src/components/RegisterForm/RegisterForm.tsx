@@ -41,7 +41,7 @@ const RegisterForm = () => {
         .oneOf([yup.ref("matKhau"), null], "Mật khẩu xác nhận không khớp"),
       email: yup
         .string()
-        .required("This field is required")
+        .required("Vui lòng điền dữ liệu vào trường")
         .matches(
           /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g,
           "Địa chỉ email không hợp lệ",
